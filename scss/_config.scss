@@ -1,0 +1,52 @@
+body {
+    background-color: #08162E;
+}
+.wrapper {
+    width: 1249px/1440px*100%;
+    margin: 0 auto;
+}
+
+h1  {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 96px;
+    color: #FFFFFF;
+    span {
+        color: #5642F5;
+    }
+}
+
+.icon-social {
+    background: unset;
+    color: #fff;
+    font-size: 40px;
+    &:hover { 
+        color: #41E295;
+        transition: 0.3s;
+    }
+}
+
+.link-desctop {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #41E295;
+    i{
+        margin-left: 4px;
+    }
+    &:hover {
+        i {
+            margin-left: 12px;
+            transition: 0.3s;
+        }
+    }
+    &:active {
+        color: #5642F5;
+    }
+}

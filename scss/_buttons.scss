@@ -1,0 +1,45 @@
+.button-search {
+    background: unset;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 8px 24px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    i {
+        margin-left: 6px;
+        font-size: 15px;
+    }
+}
+.button-advertise {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+}
+
+.btn {
+    background: #5642F5;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
+}
+
+.button-about {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    padding: 16px 32px;
+}
