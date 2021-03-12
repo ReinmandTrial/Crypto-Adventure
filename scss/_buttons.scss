@@ -16,6 +16,19 @@
         font-size: 15px;
     }
 }
+.btn-violet {
+    border: none;
+    color: #fff;
+    background: #5642F5;
+    transition: 0.3s;
+    &:hover {
+        background: #653CCF;
+    }
+    &:active {
+        background: #2930CB;
+    }
+}
+
 .button-advertise {
     font-family: Gilroy;
     font-style: normal;
@@ -23,15 +36,9 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.04em;
-}
-
-.btn {
-    background: #5642F5;
-    color: #fff;
-    text-transform: uppercase;
-    border: none;
     border-radius: 8px;
     padding: 8px 24px;
+    text-transform: uppercase;
 }
 
 .button-about {
@@ -42,4 +49,6 @@
     line-height: 24px;
     letter-spacing: 0.04em;
     padding: 16px 32px;
+    border-radius: 8px;
+    text-transform: uppercase;
 }

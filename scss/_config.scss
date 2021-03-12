@@ -6,7 +6,7 @@ body {
     margin: 0 auto;
 }
 
-h1  {
+.h1  {
     font-family: Gilroy;
     font-style: normal;
     font-weight: 800;
@@ -16,19 +16,29 @@ h1  {
     span {
         color: #5642F5;
     }
+    &-description {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+        max-width: 508px;
+    }
 }
 
 .icon-social {
     background: unset;
     color: #fff;
     font-size: 40px;
+    transition: 0.3s;
     &:hover { 
         color: #41E295;
-        transition: 0.3s;
     }
 }
 
-.link-desctop {
+.link-desktop {
     font-family: Gilroy;
     font-style: normal;
     font-weight: 800;
@@ -50,3 +60,82 @@ h1  {
         color: #5642F5;
     }
 }
+
+
+.tools-link {
+    border: 2px solid #5642F5;
+    border-radius: 16px;
+    width: 188px;
+    height: 188px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    transition: 0.3s;
+    &:hover {
+        background: #5642F5;
+    }
+    &__description {
+        position: absolute;
+        bottom: 28px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+    }
+    &__wild {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 295px;
+        height: 188px;
+        box-sizing: border-box;
+        border-radius: 16px;
+        position: relative;
+        transition: 0.3s;
+        &:hover {
+            background: #5642F5;
+        }
+    }
+}
+
+
+// .tools-card {
+//     border: 2px solid #5642F5;
+//         border-radius: 16px;
+//         width: 188px;
+//         height: 188px;
+//         display: flex;
+//         text-align: center;
+    
+//         position: relative;
+//         justify-content: center;
+//     &__link {
+        
+//     }
+//     &__img {
+        
+//     }
+//     &__description {
+//         position: absolute;
+//         bottom: 28px;
+
+//         font-family: Gilroy;
+//         font-style: normal;
+//         font-weight: 500;
+//         font-size: 24px;
+//         line-height: 32px;
+//         color: #FFFFFF;
+        
+//     }
+//     &__wild {
+
+//         &-description {
+
+//         }
+//     }
+
+// }

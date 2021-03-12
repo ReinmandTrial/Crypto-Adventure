@@ -8,11 +8,8 @@
     &__nav {
         display: flex;
         justify-content: space-between;
-    }
-    &__item {
-        margin-right: 25px;
-        &:last-child {
-            margin-right: unset;
+        &>*:not(:last-child) {
+            margin-right: 25px;
         }
     }
     &__link {
@@ -76,15 +73,12 @@
     }
 }
 
-.main-desctop {
+.main-desktop {
     background: url(../img/bg__home-page.jpg) center/cover no-repeat;
     &__content {
         display: flex;
         justify-content: space-between;
         padding: 100px 0px 267px 0px;
-        &-left {
-            float: left;
-        }
         &-right {
             float: right;
             display: flex;
@@ -96,14 +90,14 @@
         margin-bottom: 40px;
     }
     &__description {
-        width: 508px;
+        max-width: 508px;
         font-family: Gilroy;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 24px;
         color: #FFFFFF;
-        :first-child {
+        .description {
             margin-bottom: 24px;
         }
         :last-child {
@@ -123,16 +117,63 @@
     &__content {
         padding: 52px 0px 64px 0px;
     }
-    &__title {
+    .h1 {
         margin-bottom: 25px;
     }
-    &__description {
-        font-family: Gilroy;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 24px;
-        line-height: 32px;
-        color: #FFFFFF;
-        margin-bottom: 24px;
+    .h1-description {
+        margin-bottom: 25px;
     }
+}
+
+
+.section-tools {
+    &__content {
+        padding: 103px 0px 99px 0px;
+    }
+    .h1 { 
+        margin-bottom: 25px;
+    }
+
+    &__parts-card {
+        margin: -12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .tools {
+            &-text {
+                width: calc(100%/2 - 24px);
+            }
+            &-link {
+                width: calc(100%/6 - 24px);
+                height: 188px;
+                margin: 12px;
+            }
+            &-link__wild {
+                width: calc(100%/4 - 24px);
+                margin: 12px;
+            }
+        }
+    }
+
+
+    // &__parts-card {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: flex-start;
+    //     margin: -12px;
+    //     .tools-text {
+    //         width: calc( 100%/2 - 24px );
+    //         margin: 12px;
+    //     }
+    //     .tools-card {
+    //         width: calc( 100%/6 - 24px );
+    //         height: 188px;
+    //         margin: 12px;
+    //         &__wild {
+    //             width: calc( 100%/4 - 24px );
+    //             height: 188px;
+    //             margin: 12px;
+    //         }
+    //     }
+    // }
 }
