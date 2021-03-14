@@ -52,3 +52,16 @@
     border-radius: 8px;
     text-transform: uppercase;
 }
+
+.swiper-button {
+    background: #5642F5;
+    color: #41E295;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    &-back {
+        margin-right: 8px;
+    }
+}
+

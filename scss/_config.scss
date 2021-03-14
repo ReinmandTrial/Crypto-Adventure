@@ -2,8 +2,9 @@ body {
     background-color: #08162E;
 }
 .wrapper {
-    width: 1249px/1440px*100%;
+    width: 1249px;
     margin: 0 auto;
+    padding: 0px 15px;
 }
 
 .h1  {
@@ -27,11 +28,57 @@ body {
         max-width: 508px;
     }
 }
+.h5 {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.helvetica-body__16 {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.helvetica-body__13 {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+
+.ref-link {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    &__violet {
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        color: #FFFFFF;
+        padding: 4px 8px;
+        background: #5642F5;
+        border-radius: 4px;
+    }
+}
 
 .icon-social {
     background: unset;
     color: #fff;
-    font-size: 40px;
+    font-size: 15px;
     transition: 0.3s;
     &:hover { 
         color: #41E295;
@@ -61,6 +108,29 @@ body {
     }
 }
 
+.link-small-desktop {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #41E295;
+    i {
+        margin-left: 4px;
+    }
+    &:hover {
+        i {
+            margin-left: 12px;
+            transition: 0.3s;
+        }
+    }
+    &:active {
+        color: #5642F5;
+    }
+}
+
+
+
 
 .tools-link {
     border: 2px solid #5642F5;
@@ -89,53 +159,79 @@ body {
     &__wild {
         display: flex;
         align-items: center;
-        justify-content: left;
         width: 295px;
         height: 188px;
         box-sizing: border-box;
         border-radius: 16px;
         position: relative;
         transition: 0.3s;
+        &-img {
+            width: 50%;
+        }
+        &-description {
+            width: 50%;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+            color: #FFFFFF;
+        }
         &:hover {
             background: #5642F5;
+        }
+        &-one {
+            background: #8CC63F;
+        }
+        &-two {
+            background: #307CF8;
         }
     }
 }
 
-
-// .tools-card {
-//     border: 2px solid #5642F5;
-//         border-radius: 16px;
-//         width: 188px;
-//         height: 188px;
-//         display: flex;
-//         text-align: center;
+.news-card {
+    border-radius: 12px;
+    padding: 8px 12px 8px 8px;
+    &__little {
+        background: url(../img/news-card-bg.png) no-repeat;
+        height: 214px;
+        position: relative;
+        &:hover {
+            background: linear-gradient(0deg, rgba(86, 66, 245, 0.5), rgba(86, 66, 245, 0.5)), url(../img/news-card-bg.png) no-repeat;
+            opacity: 1;
+        }
+        &-header {
+            margin-bottom: 36px;
+        }
+        &-date {
+            margin-bottom: 6px;
+        }
+        .helvetica-body__16 {
+            font-weight: bold;
+            max-width: 383px;
+        }
+    }
     
-//         position: relative;
-//         justify-content: center;
-//     &__link {
-        
-//     }
-//     &__img {
-        
-//     }
-//     &__description {
-//         position: absolute;
-//         bottom: 28px;
+}
 
-//         font-family: Gilroy;
-//         font-style: normal;
-//         font-weight: 500;
-//         font-size: 24px;
-//         line-height: 32px;
-//         color: #FFFFFF;
-        
-//     }
-//     &__wild {
-
-//         &-description {
-
-//         }
-//     }
-
-// }
+.swiper {
+    &-slide {
+        width: auto;
+    }
+    &-button-back {
+        transform: rotate(180deg);
+    }
+    &-pagination {
+        display: inline-block;
+        width: 718px;
+        height: 4px;
+        background-color: #162557;
+        vertical-align: middle;
+        position: relative;
+        margin-right: 20px;
+        &-progressbar-fill {
+            background: #41E295 !important;
+        }
+    }
+}
