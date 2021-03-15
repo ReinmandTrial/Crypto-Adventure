@@ -1,3 +1,4 @@
+// HEADER START 
 .header {
     &__content {
         display: flex;
@@ -69,7 +70,9 @@
         }
     }
 }
+// HEADER END
 
+// LOGO 
 .logo {
     &__name { 
         font-family: Gilroy;
@@ -80,7 +83,9 @@
         color: #FFF;
     }
 }
+// LOGO 
 
+// MAIN-DESKTOP START 
 .main-desktop {
     background: url(../img/bg__home-page.jpg) center/cover no-repeat;
     &__content {
@@ -122,8 +127,10 @@
         font-size: 32px;
     }
 }
+// MAIN-DESKTOP END
 
 
+// INFO-TOPICS START
 .info-topics {
     &__content {
         padding: 52px 0px 64px 0px;
@@ -147,8 +154,9 @@
         }
     }
 }
+// INFO-TOPICS END
 
-
+// SECTION-TOOLS START
 .section-tools {
     &__content {
         padding: 103px 0px 99px 0px;
@@ -181,7 +189,9 @@
         }
     }
 }
+// SECTION-TOOLS END
 
+// PARTNERS START
 .partners {
     padding-bottom: 142px;
     .h1 {
@@ -213,10 +223,9 @@
         
     }
 }
+// PARTNERS END
 
-
-
-
+// FOOTER START
 .footer {
     padding: 88px 0px 55px 0px;
     background: #020A17;
@@ -339,21 +348,25 @@
         text-align: center;
     }
 }
+// FOOTER END
 
-
+// BLACK  BLACK BLACK BLACK BLACK BLACK BLACK BLACK BLACK 
 .header__item {
+    position: relative;
     &:hover .submenu {
         display: block;
     }
 }
 .submenu {
     display: block;
+    position: absolute;
 }
 .submenu {
     display: none;
 }
+// BLACK BLACK BLACK BLACK BLACK BLACK BLACK 
 
-
+// KEYFRAMES START
 @keyframes bounce {
 	0%, 20%, 60%, 100% {
 		transform: translateY(0);
@@ -370,3 +383,4 @@
 		transform: translateY(-5px);
 	}
 }
+// KEYFRAMES END
