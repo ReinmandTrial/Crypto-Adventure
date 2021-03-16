@@ -134,7 +134,35 @@ body {
 }
 
 
-
+.bitcoin {
+    &-block {
+        display: flex;
+        align-items: center;
+        width: 247px;
+        transition: 0.3s;
+        border-radius: 8px;
+        padding: 6px 0px 4px 8px;
+        &:hover {
+            background: #5642F5;;
+        }
+        &__img {
+            margin-right: 15px;
+        }
+        .helvetica-body__16 {
+            font-weight: bold;
+            span {
+                i {
+                    font-size: 8px;
+                    margin-left: 8px;
+                    margin-right: 4px;
+                }
+                color: #41E295;
+                font-size: 13px;
+                line-height: 16px;
+            }
+        }
+    }
+}
 
 .tools-link {
     border: 2px solid #5642F5;

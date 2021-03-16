@@ -1,5 +1,6 @@
 // HEADER START 
 .header {
+    position: relative;
     &__content {
         display: flex;
         justify-content: space-between;
@@ -7,6 +8,8 @@
         padding: 16px 0px; 
     }
     &__nav {
+        align-self: stretch;
+        margin: -16px 0;
         display: flex;
         justify-content: space-between;
         &>*:not(:last-child) {
@@ -14,6 +17,9 @@
         }
     }
     &__link {
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
         font-family: Gilroy;
         font-style: normal;
         font-weight: 600;
@@ -27,9 +33,16 @@
             transition: 0.3s;
             display: inline-block;
         }
+    }
+    &__item { 
+        &:hover .submenu {
+            display: block;
+        }
+        &:hover .submenu-topics {
+            display: block;
+        }
         &:hover {
-            i {
-                animation: rotate-btn .3s;
+            .header__link i {
                 transform: rotate(90deg);
             }
         }
@@ -350,11 +363,22 @@
 }
 // FOOTER END
 
-.submenu {
+.submenu-topics {
+    top: 100%;
     display: none;
     width: 100vw;
     position: absolute;
-    margin-top: 30px;
+    background:#2930CB;
+    left: 0;
+}
+
+
+
+.submenu {
+    top: 100%;
+    display: none;
+    width: 100vw;
+    position: absolute;
     background:#2930CB;
     left: 0;
     &__content {
@@ -366,19 +390,14 @@
             margin-right: 73px;
         }
         .topics {
-            float: right;
-            &__line {
-                display: flex;
-                &:not(:last-child) {
-                    margin-bottom: 46px;
-                }
-            }
+            display: flex;
+            flex-wrap: wrap;
+            margin: -23px  -36px;
             &__info {
-                &:not(:last-child) {
-                    margin-right: 72px;
-                }
+                margin: 23px 36px;
                 .helvetica-body__13 {
-                    max-width: 200px
+                    max-width: 200px;   
+                    color: #BCB8CC;
                 }
             }
         }
@@ -394,6 +413,7 @@
             transition: 0.3s;
             i {
                 transition: 0.3s;
+                font-size: 20px;
             }
             &:hover {
                 color: #41E295;
@@ -410,41 +430,8 @@
     }
 }
 
-.header__item {
-    &:hover .submenu {
-        display: inherit;
-    }
-}
 
-.bitcoin {
-    &-block {
-        display: flex;
-        align-items: center;
-        width: 247px;
-        transition: 0.3s;
-        border-radius: 8px;
-        padding: 6px 0px 4px 8px;
-        &:hover {
-            background: #5642F5;;
-        }
-        &__img {
-            margin-right: 15px;
-        }
-        .helvetica-body__16 {
-            font-weight: bold;
-            span {
-                i {
-                    font-size: 8px;
-                    margin-left: 8px;
-                    margin-right: 4px;
-                }
-                color: #41E295;
-                font-size: 13px;
-                line-height: 16px;
-            }
-        }
-    }
-}
+
 
 // KEYFRAMES START
 @keyframes bounce {

@@ -100,9 +100,20 @@
             }
         }
     }
+    .submenu {
+        &__content {
+            display: block;
+        }
+        .live-prices {
+            margin-right: 0px;
+        }
+        &__bitcoin { 
+            display: flex;
+            margin-bottom: 20px;
+        }
+    }
 }
 // MAX-WIDTH 1199.98PX breakpoints END
-
 
 // MAX-WIDTH 991.98PX breakpoints START
 @media (max-width: 991.98px) {
@@ -174,6 +185,49 @@
             }
         } 
     }
+    .submenu {
+        &__content {
+            .topics {
+                &__info {
+                    .helvetica-body__13 {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        .submenu__title {
+            .h5 { 
+                i {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .submenu__bitcoin {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -5px -10px;
+        .bitcoin-block {
+            margin: 5px 10px;
+        }
+    }
+
+    .bitcoin {
+        &-block {
+            .helvetica-body__13 {
+                font-size: 10px;
+            }
+            .helvetica-body__16 {
+                font-size: 13px;
+                line-height: 16px;
+                span {
+                    i {
+                        font-size: 7px;
+                    }
+                }
+            }
+        }
+    }
 }
 // MAX-WIDTH 991.98PX breakpoints END
 
@@ -239,6 +293,14 @@
     .swiper {
         &-pagination {
             width: 440px;
+        }
+    }
+    .submenu {
+        &__bitcoin {
+            margin-bottom: 10px;
+            .bitcoin-block {
+                margin: unset;
+            }
         }
     }
 }
@@ -329,6 +391,43 @@
         &-pagination {
             width: 225px;
         }
+    }
+    .submenu {
+        .live-prices {
+            .submenu__title {
+                margin-bottom: 5px;
+            }
+        }
+        &__content {
+            padding: 16px 16px 0px 16px;
+            .topics__info {
+                margin: 0px 0px 8px 0px;
+                .helvetica-body__13 {
+                    max-width: unset;
+                }
+            }
+            .topics {
+                flex-wrap: unset;
+                margin: unset;
+                flex-direction: column;
+            }
+        }
+        &__bitcoin {
+            margin: 0px 0px 23px 0px;
+            flex-wrap: unset;
+            flex-direction: column;
+            .bitcoin-block {
+                width: unset;
+                border-radius: unset;
+            }
+        }
+        &__border-mob {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 8px;
+        }
+    }
+    .bitcoin-block {
+        padding: 8px 0px 8x 0px;
     }
 }
 // MAX-WIDTH 576.98PX breakpoints END 
