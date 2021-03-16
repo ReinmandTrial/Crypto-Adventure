@@ -280,8 +280,35 @@
             .tools {
                 &-link__wild {
                     width: calc(100%/1 - 24px);
+                    height: 88px;
+                    margin: 8px;
+                    display: flex;
+                    justify-content: center;
+                    &-img {
+                        max-width: 100%;
+                        width: auto;
+                        height: 95%;
+                    }
+                }
+                &-link {
+                    height: 88px;
+                    &__description {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 13px;
+                        line-height: 24px;
+                        bottom: 1px;
+                    }
+                }
+                &-img {
+                    max-width: 100%;
+                    width: auto;
+                    height: 95%;
                 }
             }
+        }
+        .m-link {
+            width: calc(100%/2 - 24px);
         }
     }
     .partners {

@@ -350,21 +350,101 @@
 }
 // FOOTER END
 
-// BLACK  BLACK BLACK BLACK BLACK BLACK BLACK BLACK BLACK 
-.header__item {
-    position: relative;
-    &:hover .submenu {
-        display: block;
-    }
-}
-.submenu {
-    display: block;
-    position: absolute;
-}
 .submenu {
     display: none;
+    width: 100vw;
+    position: absolute;
+    margin-top: 30px;
+    background:#2930CB;
+    left: 0;
+    &__content {
+        padding: 32px 42px 70px 42px;
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        .live-prices {
+            margin-right: 73px;
+        }
+        .topics {
+            float: right;
+            &__line {
+                display: flex;
+                &:not(:last-child) {
+                    margin-bottom: 46px;
+                }
+            }
+            &__info {
+                &:not(:last-child) {
+                    margin-right: 72px;
+                }
+                .helvetica-body__13 {
+                    max-width: 200px
+                }
+            }
+        }
+    }
+    .submenu__title {
+        margin-bottom: 10px;
+        i {
+            margin-left: 4px;
+            color: #41E295;
+            font-size: 20px;
+        }
+        .h5 {
+            transition: 0.3s;
+            i {
+                transition: 0.3s;
+            }
+            &:hover {
+                color: #41E295;
+                i {
+                    margin-left: 12px;
+                }
+            }
+        }
+    }
+    .live-prices {
+        .submenu__title {
+            margin-bottom: 16px;
+        }
+    }
 }
-// BLACK BLACK BLACK BLACK BLACK BLACK BLACK 
+
+.header__item {
+    &:hover .submenu {
+        display: inherit;
+    }
+}
+
+.bitcoin {
+    &-block {
+        display: flex;
+        align-items: center;
+        width: 247px;
+        transition: 0.3s;
+        border-radius: 8px;
+        padding: 6px 0px 4px 8px;
+        &:hover {
+            background: #5642F5;;
+        }
+        &__img {
+            margin-right: 15px;
+        }
+        .helvetica-body__16 {
+            font-weight: bold;
+            span {
+                i {
+                    font-size: 8px;
+                    margin-left: 8px;
+                    margin-right: 4px;
+                }
+                color: #41E295;
+                font-size: 13px;
+                line-height: 16px;
+            }
+        }
+    }
+}
 
 // KEYFRAMES START
 @keyframes bounce {
