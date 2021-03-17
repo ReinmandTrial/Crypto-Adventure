@@ -142,7 +142,6 @@
 }
 // MAIN-DESKTOP END
 
-
 // INFO-TOPICS START
 .info-topics {
     &__content {
@@ -363,6 +362,7 @@
 }
 // FOOTER END
 
+// SUBMENU-TOPICS
 .submenu-topics {
     top: 100%;
     display: none;
@@ -453,9 +453,9 @@
         
     }
 }
+// SUBMENU-TOPICS
 
-
-
+// SUBMENU
 .submenu {
     top: 100%;
     display: none;
@@ -518,9 +518,7 @@
         }
     }
 }
-
-
-
+// SUBMENU
 
 // KEYFRAMES START
 @keyframes bounce {
@@ -540,3 +538,135 @@
 	}
 }
 // KEYFRAMES END
+
+// PLUG START 
+.plug {
+    margin-bottom: 24px;
+}
+// PLUG END 
+
+// LONG-BUNNER
+.long-bunner {
+    &__link {
+        display: flex;
+        align-items: center;
+        span {
+            margin-left: 50px;
+            span {
+                margin-left: 43px;
+            }
+        }
+    }
+    &__img {
+        padding: 8px;
+        background: #fff;
+        border-radius: 12px 0px 0px 12px
+    }
+    &__info {
+        background: #0052C7;
+        border-radius: 0px 12px 12px 0px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+}
+// LONG-BUNNER
+
+// POOLS START
+.pools {
+    margin: 47px 0px 82px 0px;
+    &__content {
+        .h1 {
+            margin-bottom: 33px;
+            &-description {
+                margin-bottom: 22px;
+                max-width: 640px;
+            }
+        }
+        .helvetica-body__16 {
+            font-weight: bold;
+            max-width: 640px
+        }
+    }
+
+}
+// POOLS END
+
+// BLOCK-IMG START 
+.block-img {
+    background: url(../img/money.png) no-repeat;
+    position: absolute;
+    right: -93px;
+    top: 0px;
+    z-index: 1;
+    width: 662px;
+    height: 596px;
+    &-header {
+        z-index: 99;
+        background-color: #08162E;
+    }
+}
+// BLOCK-IMG END 
+
+// DIVI START 
+.divi  {
+    margin-bottom: 24px;
+    &:first-child {
+        margin-bottom: 39px;
+    }
+    &__content {
+        background: #162557;
+        border-radius: 24px;
+        padding: 0px 32px 32px 32px;
+    }
+    &__block {
+        &-logo {
+            display: flex;
+            align-items: center;
+            padding-top: 32px;
+        }
+        &-grade  {
+            .link-tick {
+                margin-bottom: 28px;
+            }
+            i {
+                color: #41E295;
+            }
+        }
+    }
+    &__title {
+        margin-left: 24px;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
+    &__text {
+        margin-bottom: 24px;
+        &>*:not(:last-child) {
+            margin-bottom: 23px;
+        }
+        .helvetica-body__16 {
+            color: #BCB8CC;
+        }
+    }
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        &-left {
+            display: flex;
+            &>*:not(:first-child) {
+                margin-left: 8px;
+            }
+        }
+        &-right {
+            display: flex;
+            &>*:not(:first-child) {
+                margin-left: 8px;
+            }
+        }
+    }
+}
+// DIVI END

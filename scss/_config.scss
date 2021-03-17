@@ -32,6 +32,14 @@ body {
         max-width: 508px;
     }
 }
+.h2 {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 64px;
+    color: #FFFFFF;
+}
 .h5 {
     font-family: Gilroy;
     font-style: normal;
@@ -76,6 +84,54 @@ body {
         padding: 4px 8px;
         background: #5642F5;
         border-radius: 4px;
+    }
+}
+
+.link-tick {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1A1439;
+    padding: 7px 9px;
+    background: #41E295;
+    border-radius: 4px;
+    text-align: center;
+}
+.link-staking {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 8px 24px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+.link-divi {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 8px 24px;
+    &:hover {
+        border: 2px solid #5642F5;
+    }
+    &:active {
+        background: #5642F5;
+        border: 2px solid #5642F5;
+    }
+    i {
+        margin-left: 10px;
+        font-size: 8px;
     }
 }
 
