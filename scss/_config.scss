@@ -244,6 +244,56 @@ body {
             max-width: 383px;
         }
     }
+    &__big {
+        &-header {
+            padding: 8px 12px 8px 8px;
+            width: 400px;
+            height: 214px;
+            background: url(../img/news-card-bg-big.png) no-repeat;
+            position: relative;
+        }
+        &-footer {
+            background: #15214B;
+            border-radius: 0px 0px 12px 12px;
+            max-width: 400px;
+            color: #fff;
+        }
+        &-content {
+            padding: 16px 17px;
+        }
+        .helvetica-body__16 {
+            font-weight: bold;
+        }
+        &-title {
+            margin-bottom: 6px;
+            width: 366px;
+        }
+        &-description {
+            margin-bottom: 16px;
+        }
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-author {
+            display: flex;
+            align-items: center;
+            span {
+                margin-left: 8px;
+            }
+        }
+        &-time {
+            opacity: .7;
+            i {
+                font-size: 13px;
+            }
+            align-items: center;
+            span {
+                margin-left: 9px;
+            }
+        }
+    }
     
 }
 

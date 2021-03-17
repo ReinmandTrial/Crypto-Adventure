@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('../fonts/icon-fonts/#{$icomoon-font-path}/#{$icomoon-font-family}.eot?ibwggc');
-  src:  url('../fonts/icon-fonts/#{$icomoon-font-path}/#{$icomoon-font-family}.eot?ibwggc#iefix') format('embedded-opentype'),
-    url('../fonts/icon-fonts/#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?ibwggc') format('truetype'),
-    url('../fonts/icon-fonts/#{$icomoon-font-path}/#{$icomoon-font-family}.woff?ibwggc') format('woff'),
-    url('../fonts/icon-fonts/#{$icomoon-font-path}/#{$icomoon-font-family}.svg?ibwggc##{$icomoon-font-family}') format('svg');
+  src:  url('../fonts/icon-fonts/#{$icomoon-font-path}/#{$icomoon-font-family}.eot?dycf31');
+  src:  url('../fonts/icon-fonts/#{$icomoon-font-path}/#{$icomoon-font-family}.eot?dycf31#iefix') format('embedded-opentype'),
+    url('../fonts/icon-fonts/#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?dycf31') format('truetype'),
+    url('../fonts/icon-fonts/#{$icomoon-font-path}/#{$icomoon-font-family}.woff?dycf31') format('woff'),
+    url('../fonts/icon-fonts/#{$icomoon-font-path}/#{$icomoon-font-family}.svg?dycf31##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -75,6 +75,11 @@
 .icon-email {
   &:before {
     content: $icon-email; 
+  }
+}
+.icon-clock {
+  &:before {
+    content: $icon-clock; 
   }
 }
 
