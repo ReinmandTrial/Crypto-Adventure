@@ -539,6 +539,9 @@
 }
 // KEYFRAMES END
 
+
+
+// discover-staking PAGE start
 // PLUG START 
 .plug {
     margin-bottom: 24px;
@@ -644,6 +647,7 @@
         margin-bottom: 32px;
     }
     &__text {
+        overflow: hidden;
         margin-bottom: 24px;
         &>*:not(:last-child) {
             margin-bottom: 23px;
@@ -668,5 +672,15 @@
             }
         }
     }
+    &__see {
+        display: none;
+    }
+}
+.open.divi__text {
+    height: unset;
+}
+.d-none {
+    display: none !important;
 }
 // DIVI END
+// discover-staking end

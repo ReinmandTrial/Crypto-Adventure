@@ -124,6 +124,11 @@
             margin: 0px 45px;
         }
     }
+    // discover-staking page 
+    .block-img {
+        z-index: -1;
+        opacity: .3;
+    }
 }
 // MAX-WIDTH 1199.98PX breakpoints END
 
@@ -248,6 +253,75 @@
             margin: 5px 25px;
         }
     }
+    // discover-staking page start 
+    .pools {
+        margin: 15px 0px 36px 0px;
+        &__content {
+            .h1 {
+                margin-bottom: 21px;
+                &-description {
+                    font-weight: 800;
+                    max-width: unset;
+                    margin-bottom: 13px;
+                }
+            }
+            .helvetica-body__16 {
+                font-size: 13px;
+                line-height: 16px;
+                max-width: unset;
+            }
+        }
+    }
+    .divi {
+        &__content {
+            padding: 0px 16px 16px 16px;
+        }
+        &__header {
+            margin-bottom: 16px;
+        }
+        &__link {
+            display: block;
+            &-left {
+                margin: -4px -4px;
+                margin-bottom: 24px;
+                flex-wrap: wrap;
+                .link-staking {
+                    margin: 4px 4px;
+                }
+            }
+            &-right {
+                margin: -4px -4px;
+                flex-wrap: wrap;
+                .link-divi {
+                    margin: 4px 4px;
+                }
+            }
+        }
+        &__block {
+            &-img {
+                width: 48px;
+                height: 48px;
+            }
+            &-logo {
+                padding-top: 16px;
+            }
+            &-grade {
+                .link-tick {
+                    padding: 4px 8px;
+                }
+            }
+        }
+        &__text {
+            &>*:not(:last-child) {
+                margin-bottom: 12px;
+            }
+        }
+        .h2  {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+     // discover-staking page end
 }
 // MAX-WIDTH 991.98PX breakpoints END
 
@@ -363,6 +437,71 @@
         &__col.submenu-topics__col-relase {
             width: 288px;
         } 
+    }
+    // discover-staking page start
+    .pools {
+        margin: 232px 0px 36px 0px;
+    }
+    .block-img  {
+        z-index: -1;
+        top: -92px;
+        opacity: unset;
+    }
+    .divi {
+        &__header {
+            display: block;
+            margin-bottom: 12px;
+        }
+        &__block {
+            &-grade {
+                display: flex;
+                align-items: center;
+                margin-top: 12px;
+                .link-tick {
+                    order: 2;
+                    margin-bottom: unset;
+                    margin-left: 19px;
+                }
+            }
+        }
+        &__text {
+            height: 96px;
+            transition: 0.3s;
+            margin-bottom: 4px;
+        }
+        &__see {
+            display: block;
+            margin-bottom: 20px;
+            color: #41E295;
+            background:none;
+            border: none;
+            span {
+                i {
+                    margin-left: 6px;
+                    font-size: 10px;
+                }
+            }
+            .show {
+                align-items: center;
+                display: flex;
+                i {
+                    display: block;
+                    transform: rotate(90deg);
+                }
+            }
+            .hide {
+                align-items: center;
+                display: flex;
+                i {
+                    display: block;
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+    }
+    // discover-staking page end
+    .d-m-none {
+        display: none;
     }
 }
 // MAX-WIDTH 767.98PX breakpoints END
